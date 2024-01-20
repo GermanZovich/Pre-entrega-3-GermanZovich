@@ -1,0 +1,41 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+//variables de boostrap
+
+
+
+
+// estilos
+.navbar-logo{
+    font-size: 3rem;
+    color:aliceblue;
+    &-punto{
+        font-size: 3rem;
+        color: aquamarine;
+    }
+}
+
+.nav-btn
+{
+    color: #FFF;
+    font-size: 25px;
+    border-color: white;
+}
+
+.nav-contenedor-lista{
+    padding-left: 2rem;
+}
+
+.navbar-li a{
+    @include color-texto($color-fondo);
+
+    &:hover{
+        @include color-texto-hover($color-fondo);
+    }
+
+    &:visited{
+        @include color-texto-visited($color-fondo);
+    }
+
+}
+

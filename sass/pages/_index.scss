@@ -1,7 +1,28 @@
+
+
 *{
     font-family: $ff-montserrat;
 }
 
 h1{
-    color: $primary-color;
+    display: none;
+}
+
+body{
+    @include color-texto($color-fondo);
+}
+
+.contenedor__texto-principal{
+    @include flexbox(column, space-between, stretch);
+    padding-top: 3rem;
+}
+
+.h2-texto-principal{
+    font-size: 3rem;
+    padding-left: 7rem;
+}
+
+.p-texto-principal{
+    font-size: 1rem;
+    padding-left: 3rem;
 }

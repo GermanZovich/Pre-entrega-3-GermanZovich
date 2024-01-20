@@ -8,25 +8,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     <h1>CURRICULUM GERMAN ZOVICH</h1>
 
     <header>
-        <nav>
-            <ul>
-                <li>Info</li>
-                <li>Proyectos</li>
-                <li>Contacto</li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container-fluid">
+              <p class="navbar-logo">Zovich<span class="navbar-logo-punto">.</span> </p>
+              <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars nav-btn"></i></span> 
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-contenedor-lista">
+                  <li class="nav-item navbar-li">
+                    <a class="nav-link"  href="#">Home</a>
+                  </li>
+                  <li class="nav-item navbar-li">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item navbar-li">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
     
     </header>
 
     <div class="contenedor__texto-principal">
-        <h2>German Zovich</h2>
-        <p>Full Stack developer</p>
+        <h2 class="h2-texto-principal">Full Stack developer</h2>
+        <p class="p-texto-principal">Mi nombre es German Zovich</p>
         <p>Que todo fluya y nada influya</p>
     </div>
 
@@ -55,6 +71,7 @@
     </section>
 
     <section class="section__contacto">
+        <h2>Mis proyectos</h2>
         
         <form action="" method="post"></form>
         <label for="nombre"> Nombre</label>
@@ -63,7 +80,7 @@
         <input type="email" id="email" name="email">
         <textarea>
         </textarea>
-        <button></button> 
+        <button>Enviar</button> 
     </section>
 
     

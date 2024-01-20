@@ -1,6 +1,56 @@
-$primary-color: red;
-$secondary-color: black;
-$terciary-color: blue;
+$texto-color: #fff;
+$texto-color-secundario: #000;
+$texto-color-terciario: rgb(44, 44, 44);
 $ff-montserrat: "Montserrat", sans-serif;
+$color-fondo: #0f172a;
 
 // mixin
+
+@mixin MQ-md{
+    @media(min-width:768px){
+    @content;
+    }
+}
+
+@mixin color-texto($bg){
+    background-color: $bg;
+
+    @if(lightness($bg) > 50){
+        color:$texto-color-secundario;
+    }@else{
+        color: $texto-color;
+    }
+
+}
+    @mixin color-texto-hover($bg){
+        background-color: $bg;
+        @if(lightness($bg) > 50){
+            color:$texto-color-secundario;
+        }@else{
+            color: $texto-color-terciario;
+        }
+    }
+
+    @mixin color-texto-visited($bg){
+        background-color: $bg;
+        @if(lightness($bg) > 50){
+            color:$texto-color-secundario;
+        }@else{
+            color: $texto-color;
+        }
+
+        
+    }
+
+    @mixin flexbox($direction: row, $justify-content: flex-start, $align-items: stretch) {
+        display: flex;
+        flex-direction: $direction;
+        justify-content: $justify-content;
+        align-items: $align-items;
+      } 
+
+      @mixin grid-container($columns: 12, $gap: 20px) {
+        display: grid;
+        grid-template-columns: repeat($columns, 1fr);
+        gap: $gap;
+      }
