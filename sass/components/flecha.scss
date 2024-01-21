@@ -1,0 +1,10 @@
+.contenedor-flecha{
+    @include flexbox(row, flex-end, flex-end);
+    padding-right: 3rem;
+}
+
+.boton-flecha{
+    width: 3rem;
+    background-color: $color-fondo;
+    margin-top: 15rem;
+}

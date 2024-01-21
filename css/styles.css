@@ -11914,7 +11914,7 @@ textarea.form-control-lg {
   align-items: center;
   width: 80vw;
   height: 40vh;
-  background-color: rgba(127, 255, 212, 0.068);
+  background: radial-gradient(#0f172a, rgba(127, 255, 212, 0.068));
   border-top: 1px solid rgba(127, 255, 212, 0.114);
   border-radius: 1rem;
   overflow: hidden;
@@ -11979,13 +11979,27 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .contenedor-linea {
-    padding-top: 20rem;
+    padding-top: 2rem;
   }
 }
 
 .linea {
   border-color: aquamarine;
   width: 90vw;
+}
+
+.contenedor-flecha {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 3rem;
+}
+
+.boton-flecha {
+  width: 3rem;
+  background-color: #0f172a;
+  margin-top: 15rem;
 }
 
 * {
