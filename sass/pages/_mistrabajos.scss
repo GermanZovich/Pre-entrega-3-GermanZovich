@@ -1,0 +1,31 @@
+.section__tarjetas{
+    //mixin de media query md
+    @include MQ-md{
+        @include flexbox(column);
+        
+    }
+}
+
+.tarjeta{
+    @include MQ-md{
+        @include flexbox();
+        justify-content: flex-start;
+        padding-left: 5rem;
+        width: 75vw;
+        height: 50vh;
+    }
+}
+
+.tarjeta img{
+    @include MQ-md{
+        
+    }
+}
+
+.contenedor-texto-tarjetas{
+    @include MQ-md{
+        @include grid-container(1fr, 3rem);
+        grid-template-rows: 2fr;
+
+    }
+}

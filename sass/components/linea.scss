@@ -1,0 +1,19 @@
+
+
+
+.contenedor-linea{
+    @include flexbox(column, center, center);
+    width: 100vw;
+
+    //mixin de media query
+    @include MQ-md{
+        padding-top: 20rem;
+    }
+}
+
+
+.linea{
+    border-color: aquamarine;
+    width: 90vw;
+    
+}

@@ -3,9 +3,14 @@
 // Components
 
 @import "./components/nav.scss";
+@import "./components/tarjetas.scss";
+@import "./components/footer.scss";
+@import "./components/linea.scss";
 
 
 // Pages
 
 @import "./pages/index";
+@import "./pages/mistrabajos";
+@import "./pages/contacto";
 

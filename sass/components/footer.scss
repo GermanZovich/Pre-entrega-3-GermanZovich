@@ -1,0 +1,24 @@
+
+.footer{
+    @include flexbox(row, center, space-between);
+    height: 3rem;
+    background-color: $color-fondo-tarjetas;
+    border-top: 1px solid $color-borde-tarjetas;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+
+    @include MQ-md{
+        @include flexbox(row, space-around, center);
+        font-size: 1rem;
+    }
+}
+
+.footer a{
+    text-decoration: none;
+    color: $color-texto-resaltado;
+    &:visited{
+        color: $color-texto-resaltado;
+    }
+}

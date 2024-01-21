@@ -1,0 +1,42 @@
+
+
+.section__tarjetas{
+    @include flexbox(column, center, center);
+    width: 100vw;
+    gap: 3rem;
+    padding-top: 2rem;
+
+    //mixin de media query md
+    @include MQ-md{
+    @include flexbox(row, center, center);
+    gap: 10rem;   
+    padding-bottom: 5rem;
+    }
+}
+
+.tarjeta{
+    @include flexbox(column, center, center);
+    width: 80vw;
+    height: 40vh;
+    background-color: $color-fondo-tarjetas;
+    border-top: 1px solid $color-borde-tarjetas;
+    border-radius:1rem;
+    overflow: hidden;
+    gap: 1rem;
+
+    @include MQ-md{
+        width: 40vw;
+        height: 55vh;
+    }
+}
+
+.tarjeta img{
+    padding-top: 1rem;
+    width: 25rem;
+    border-radius: 1rem;
+
+    @include MQ-md{
+        width: 35rem;
+        border-radius: 2.5rem;
+    }
+}

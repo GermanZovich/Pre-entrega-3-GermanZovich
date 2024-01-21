@@ -1,0 +1,31 @@
+
+
+
+.section-contacto{
+    height: 60vh;
+    @include flexbox();
+}
+
+.form-contacto{
+    @include flexbox(column, center, flex-start);
+    gap:1rem;
+}
+
+.contenedor-contacto-items{
+    color:$texto-color;
+    font-size: 1.5rem;
+
+    &-input{
+        background-color: $color-fondo-tarjetas;
+        color: $color-texto-resaltado;
+        border-color: $color-borde-tarjetas;
+    }
+
+
+    &-textarea{
+        background-color: $color-fondo-tarjetas;
+        color: $color-texto-resaltado;
+        border-color: $color-borde-tarjetas;
+        
+    }
+}

@@ -1,8 +1,12 @@
 $texto-color: #fff;
+$texto-color-principal: #78859a;
 $texto-color-secundario: #000;
 $texto-color-terciario: rgb(44, 44, 44);
+$color-texto-resaltado: aquamarine;
 $ff-montserrat: "Montserrat", sans-serif;
 $color-fondo: #0f172a;
+$color-fondo-tarjetas: rgba(127, 255, 212, 0.068);
+$color-borde-tarjetas:rgba(127, 255, 212, 0.114);
 
 // mixin
 
@@ -42,7 +46,7 @@ $color-fondo: #0f172a;
         
     }
 
-    @mixin flexbox($direction: row, $justify-content: flex-start, $align-items: stretch) {
+    @mixin flexbox($direction: row, $justify-content: center, $align-items: center) {
         display: flex;
         flex-direction: $direction;
         justify-content: $justify-content;
