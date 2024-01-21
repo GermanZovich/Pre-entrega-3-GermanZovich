@@ -3,11 +3,16 @@
 
 .section-contacto{
     height: 60vh;
-    @include flexbox();
+    @include flexbox(column, center, center);
 }
 
 .form-contacto{
-    @include flexbox(column, center, flex-start);
+    
+    @include flexbox(column, center, center);
+
+    @include MQ-md{
+        @include flexbox(column, center, flex-start);
+    }
     gap:1rem;
 }
 
@@ -19,13 +24,52 @@
         background-color: $color-fondo-tarjetas;
         color: $color-texto-resaltado;
         border-color: $color-borde-tarjetas;
+
+        &:focus{
+            border-color: $color-texto-resaltado;
+            
+        }
     }
 
 
+}
+
+
+    
+
+.contenedor-contacto-items-mensaje{
+    font-size: 1.5rem;
+
+    @include MQ-md{
+    @include flexbox(row, center, flex-start);
+    }
     &-textarea{
         background-color: $color-fondo-tarjetas;
         color: $color-texto-resaltado;
         border-color: $color-borde-tarjetas;
-        
+
     }
 }
+
+.contenedor-contacto-items-boton{
+
+    @include MQ-md{
+        padding-left: 29rem;
+    }
+
+    &-btn{
+        background-color: $color-fondo-tarjetas;
+        color: $color-texto-resaltado;
+        border: 1px solid $color-texto-resaltado;
+        border-radius: .5rem;
+        font-size: 1.2rem;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transition:  0.3s ease-in-out;
+            background-color:$color-texto-resaltado;
+            color: $color-fondo;
+            border-color: $color-fondo;
+        }
+    }
+}
+

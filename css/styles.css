@@ -12102,7 +12102,7 @@ body {
 .section-contacto {
   height: 60vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -12111,8 +12111,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
+}
+@media (min-width: 768px) {
+  .form-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 
 .contenedor-contacto-items {
@@ -12124,10 +12132,45 @@ body {
   color: aquamarine;
   border-color: rgba(127, 255, 212, 0.114);
 }
-.contenedor-contacto-items-textarea {
+.contenedor-contacto-items-input:focus {
+  border-color: aquamarine;
+}
+
+.contenedor-contacto-items-mensaje {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .contenedor-contacto-items-mensaje {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.contenedor-contacto-items-mensaje-textarea {
   background-color: rgba(127, 255, 212, 0.068);
   color: aquamarine;
   border-color: rgba(127, 255, 212, 0.114);
+}
+
+@media (min-width: 768px) {
+  .contenedor-contacto-items-boton {
+    padding-left: 29rem;
+  }
+}
+.contenedor-contacto-items-boton-btn {
+  background-color: rgba(127, 255, 212, 0.068);
+  color: aquamarine;
+  border: 1px solid aquamarine;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  transition: 0.3s ease-in-out;
+}
+.contenedor-contacto-items-boton-btn:hover {
+  transition: 0.3s ease-in-out;
+  background-color: aquamarine;
+  color: #0f172a;
+  border-color: #0f172a;
 }
 
 /*# sourceMappingURL=styles.css.map */
