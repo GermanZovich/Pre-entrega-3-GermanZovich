@@ -11914,9 +11914,6 @@ textarea.form-control-lg {
   align-items: center;
   width: 80vw;
   height: 40vh;
-  background: radial-gradient(#0f172a, rgba(127, 255, 212, 0.068));
-  border-top: 1px solid rgba(127, 255, 212, 0.114);
-  border-radius: 1rem;
   overflow: hidden;
   gap: 1rem;
 }
@@ -11926,6 +11923,12 @@ textarea.form-control-lg {
     height: 55vh;
     gap: 2rem;
   }
+}
+
+.tarjeta-estilos {
+  background: radial-gradient(#0f172a, rgba(127, 255, 212, 0.068));
+  border-top: 1px solid rgba(127, 255, 212, 0.114);
+  border-radius: 1rem;
 }
 
 .tarjeta img {
@@ -12121,6 +12124,11 @@ body {
   }
 }
 
+.contenedor-curriculum {
+  width: 85%;
+  margin: auto;
+}
+
 .contenedor-info {
   display: flex;
   flex-direction: column;
@@ -12130,7 +12138,7 @@ body {
 @media (min-width: 768px) {
   .contenedor-info {
     margin-top: 2rem;
-    height: 72vh;
+    height: 72.4vh;
   }
 }
 

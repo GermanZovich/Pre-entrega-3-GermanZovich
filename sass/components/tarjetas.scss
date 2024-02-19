@@ -18,9 +18,7 @@
     @include flexbox(column, center, center);
     width: 80vw;
     height: 40vh;
-    background: radial-gradient($color-fondo, $color-fondo-tarjetas);
-    border-top: 1px solid $color-borde-tarjetas;
-    border-radius:1rem;
+    
     overflow: hidden;
     gap: 1rem;
 
@@ -29,6 +27,12 @@
         height: 55vh;
         gap: 2rem;
     }
+}
+
+.tarjeta-estilos{
+    background: radial-gradient($color-fondo, $color-fondo-tarjetas);
+    border-top: 1px solid $color-borde-tarjetas;
+    border-radius:1rem;
 }
 
 .tarjeta img{
