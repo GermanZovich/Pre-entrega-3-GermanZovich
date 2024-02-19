@@ -11,7 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="canonical" href="https://portfolio-zovich.000webhostapp.com">
+    
     <title>Portfolio Zovich</title>
 </head>
 <body>
@@ -49,7 +52,7 @@
     </div>
 
     <div class="contenedor-flecha">
-      <img alt="imagen de flecha hacia abajo" class="boton-flecha slide-top" src="./resources/icon/arrow-down-solid.svg"></img>
+      <img alt="imagen de flecha hacia abajo" class="animate__animated animate__bounce animate__infinite animate__delay-3s animate__slow	boton-flecha" src="./resources/icon/arrow-down-solid.svg"></img>
     </div>
 
     <div class="contenedor-linea">
@@ -62,7 +65,7 @@
     </div>
 
     <section class="section__tarjetas">
-      <div class="tarjeta">
+      <div data-aos="fade-left" class="tarjeta">
         <img alt="imagen de referencia de la pagina creada por german zovich" src="../resources/img/pagina1.png">
         <div class="contenedor-texto-tarjetas">
         <h4 class="texto-tarjeta-titulo">Blog</h4>
@@ -70,7 +73,7 @@
     </div>
     </div>
     
-    <div class="tarjeta">
+    <div data-aos="fade-right" class="tarjeta">
         <img alt="imagen de referencia de la pagina creada por german zovich" src="../resources/img/pagina2.png" alt="imagen representativa de la pagina creada por german zovich">
         <div class="contenedor-texto-tarjetas">
             <h4>Tienda de chocolates</h4>
@@ -85,8 +88,13 @@
       <p>Email de contacto: Zovich99@gmail.com</p>
       <a href="./pages/contacto.html">Contacto</a>
     </foote>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </html>

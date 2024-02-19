@@ -11924,6 +11924,7 @@ textarea.form-control-lg {
   .tarjeta {
     width: 40vw;
     height: 55vh;
+    gap: 2rem;
   }
 }
 
@@ -11937,6 +11938,13 @@ textarea.form-control-lg {
     width: 35rem;
     border-radius: 2.5rem;
   }
+}
+
+.contenedor-texto-tarjetas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
@@ -11964,10 +11972,10 @@ textarea.form-control-lg {
 
 .footer a {
   text-decoration: none;
-  color: aquamarine;
+  color: #7fffd4;
 }
 .footer a:visited {
-  color: aquamarine;
+  color: #7fffd4;
 }
 
 .contenedor-linea {
@@ -12041,7 +12049,7 @@ body {
 
 .p-texto-principal {
   font-size: 1rem;
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 @media (min-width: 768px) {
   .p-texto-principal {
@@ -12052,7 +12060,7 @@ body {
 
 .p-texto-principal-dos {
   font-size: 1rem;
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 @media (min-width: 768px) {
   .p-texto-principal-dos {
@@ -12143,11 +12151,11 @@ body {
 }
 .contenedor-contacto-items-input {
   background-color: rgba(127, 255, 212, 0.068);
-  color: aquamarine;
+  color: #7fffd4;
   border-color: rgba(127, 255, 212, 0.114);
 }
 .contenedor-contacto-items-input:focus {
-  border-color: aquamarine;
+  border-color: #7fffd4;
 }
 
 .contenedor-contacto-items-mensaje {
@@ -12163,7 +12171,7 @@ body {
 }
 .contenedor-contacto-items-mensaje-textarea {
   background-color: rgba(127, 255, 212, 0.068);
-  color: aquamarine;
+  color: #7fffd4;
   border-color: rgba(127, 255, 212, 0.114);
 }
 
@@ -12174,15 +12182,15 @@ body {
 }
 .contenedor-contacto-items-boton-btn {
   background-color: rgba(127, 255, 212, 0.068);
-  color: aquamarine;
-  border: 1px solid aquamarine;
+  color: #7fffd4;
+  border: 1px solid #7fffd4;
   border-radius: 0.5rem;
   font-size: 1.2rem;
   transition: 0.3s ease-in-out;
 }
 .contenedor-contacto-items-boton-btn:hover {
   transition: 0.3s ease-in-out;
-  background-color: aquamarine;
+  background-color: #7fffd4;
   color: #0f172a;
   border-color: #0f172a;
 }

@@ -11,6 +11,7 @@ h1{
 
 body{
     @include color-texto($color-fondo);
+    
 }
 
 .contenedor__texto-principal{
@@ -36,7 +37,7 @@ body{
 
 .p-texto-principal{
     font-size: 1rem;
-    padding-left: 3rem;
+    padding-left: 2rem;
     //mixin de media query
     @include MQ-md{
     font-size: 2rem;
@@ -46,7 +47,7 @@ body{
 
 .p-texto-principal-dos{
     font-size: 1rem;
-    padding-left: 3rem;
+    padding-left: 2rem;
     //mixin de media query
     @include MQ-md{
     font-size: 2rem;

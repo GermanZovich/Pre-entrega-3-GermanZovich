@@ -27,6 +27,7 @@
     @include MQ-md{
         width: 40vw;
         height: 55vh;
+        gap: 2rem;
     }
 }
 
@@ -39,4 +40,9 @@
         width: 35rem;
         border-radius: 2.5rem;
     }
+}
+
+.contenedor-texto-tarjetas{
+    @include flexbox(column, center, center);
+
 }
