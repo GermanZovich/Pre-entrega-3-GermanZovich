@@ -12121,6 +12121,52 @@ body {
   }
 }
 
+.contenedor-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .contenedor-info {
+    margin-top: 2rem;
+    height: 72vh;
+  }
+}
+
+.tarjeta-info {
+  height: auto;
+  justify-content: flex-start;
+}
+@media (min-width: 768px) {
+  .tarjeta-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.h2-info {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .h2-info {
+    font-size: 3rem;
+  }
+}
+
+.p-info {
+  font-size: 1rem;
+  width: 85%;
+}
+@media (min-width: 768px) {
+  .p-info {
+    font-size: 1.5rem;
+  }
+}
+
 .section-contacto {
   height: 60vh;
   display: flex;
