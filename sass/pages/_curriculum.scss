@@ -1,6 +1,44 @@
 
 .contenedor-curriculum{
-    width: 85%;
+    width: 75vw;
     margin: auto;
-    
+}
+
+.tarjeta-curriculum{
+    @include flexbox(column, center, center);
+    @include MQ-md{
+        width: 75vw;
+    }
+}
+
+.contenido-principal{
+    @include flexbox(row, flex-start, center);
+}
+
+.contenedor-imagen-curriculum{
+    @include MQ-md{
+        width: 30rem;
+    }
+}
+
+.curriculum-foto{
+    width: 120px;
+
+    @include MQ-md{
+        width: 320px;
+        border-radius: 3rem;
+    }
+
+}
+
+.contenedor-datos-principales{
+
+    @include flexbox(column, center, flex-start);
+    width: 50%;
+}
+
+.contenedor-curriculum-secundario{
+    margin: auto;
+    padding-top:2rem;
+    width:75%;
 }

@@ -12119,14 +12119,64 @@ body {
   .contenedor-texto-tarjetas {
     display: grid;
     grid-template-columns: repeat(1fr, 1fr);
-    gap: 3rem;
+    grid-template-rows: repeat(3rem, 1fr);
+    gap: 20px;
     grid-template-rows: 2fr;
   }
 }
 
 .contenedor-curriculum {
-  width: 85%;
+  width: 75vw;
   margin: auto;
+}
+
+.tarjeta-curriculum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .tarjeta-curriculum {
+    width: 75vw;
+  }
+}
+
+.contenido-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .contenedor-imagen-curriculum {
+    width: 30rem;
+  }
+}
+
+.curriculum-foto {
+  width: 120px;
+}
+@media (min-width: 768px) {
+  .curriculum-foto {
+    width: 320px;
+    border-radius: 3rem;
+  }
+}
+
+.contenedor-datos-principales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.contenedor-curriculum-secundario {
+  margin: auto;
+  padding-top: 2rem;
+  width: 75%;
 }
 
 .contenedor-info {
@@ -12138,7 +12188,6 @@ body {
 @media (min-width: 768px) {
   .contenedor-info {
     margin-top: 2rem;
-    height: 72.4vh;
   }
 }
 

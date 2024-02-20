@@ -53,8 +53,9 @@ $color-borde-tarjetas:rgba(127, 255, 212, 0.114);
         align-items: $align-items;
       } 
 
-      @mixin grid-container($columns: 12, $gap: 20px) {
+      @mixin grid-container($columns: 12, $row: 1, $gap: 20px) {
         display: grid;
         grid-template-columns: repeat($columns, 1fr);
+        grid-template-rows: repeat($row, 1fr);
         gap: $gap;
       }
